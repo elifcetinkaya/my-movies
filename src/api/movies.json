@@ -1,25 +1,25 @@
 {
   "movies": [
     {
-      "id": 4,
-      "name": "Rogue",
-      "rating": 7.4,
-      "overview": "This is a wider card with supporting text below as a natural lead-in to additional content.",
-      "imageURL": "https://image.tmdb.org/t/p/w220_and_h330_face/uOw5JD8IlD546feZ6oxbIjvN66P.jpg"
+      "name": "Matrix",
+      "rating": "8.1",
+      "imageURL": "https://www.themoviedb.org/t/p/w600_and_h900_bestv2/f89U3ADr1oiB1s9GkdPOEpXUk5H.jpg",
+      "overview": "İki türlü gerçeklik vardır: biri yaşanan, öteki yaşamın ötesinde olan. Bunlardan biri rüya, öteki de Matrix'dir. Neo, umutsuz bir çaba ile Matrix hakkındaki gerçeği araştırıyor. Tam olarak kavrayamadığı şeylerin yaşamını kontrol ettiğini biliyor.Matrix Nedir? Neo, efsaneler aracılığı ile tanıdığı ve son derece tehlikeli bir adam olan Morpheus'un gerçeği bildiğine inanmaktadır.Bir gece Neo, kendisini başka bir dünyaya götürebilecek güzel yabancı Trinity ile tanışır. Bu kızın götüreceği dünyada, Morpheus'u bulacak ve Matrix hakkında bir şeyler öğrenecektir.",
+      "id": 7
     },
     {
-      "id": 5,
-      "name": "Project Power",
-      "rating": 6.7,
-      "overview": "This is a wider card with supporting text below as a natural lead-in to additional content.",
-      "imageURL": "https://image.tmdb.org/t/p/w220_and_h330_face/TnOeov4w0sTtV2gqICqIxVi74V.jpg"
+      "name": "Matrix 2: Reloaded ",
+      "rating": "6.9",
+      "imageURL": "https://www.themoviedb.org/t/p/w600_and_h900_bestv2/8xEVAe84zlL9rkfYT6dZXero4KK.jpg",
+      "overview": "Neo ve Zion'un diğer isyancıları, Matrix'i dönüştürme çalışmalarına başlıyor. Neo'nun kendi gücünün ve misyonunun iyice farkına vardığı noktadan başlıyoruz filme. İlk filmde kendisini ve yoldaşlarını ajanların elinden kurtaran Neo, ikinci filmde bütün bir Zion şehrini ve sakinlerini kanatları altına almaya çalışacak. Bunun için de, ulaşmak son derece güç olsa da, Anahtarcı'yı bulmaları gerekiyor. Bu durum ise düşmanlarına yenilerini de katacaktır. Kendisini kopyalayıp, kopyalarından bir ordu hazırlayan Ajan Smith'e İkizler de katılır. The Matrix Reloaded'da, direnmeyi sürdüren tek insan kolonisi olan Zion'un kapıları seyircilere açılıyor. Fakat açılan kapılarından girmeye çalışan başkaları da olacaktır!..",
+      "id": 8
     },
     {
-      "id": 6,
-      "name": "Superman",
-      "rating": 7.6,
-      "overview": "This is a wider card with supporting text below as a natural lead-in to additional content.",
-      "imageURL": "https://image.tmdb.org/t/p/w220_and_h330_face/6Bbq8qQWpoApLZYWFFAuZ1r2gFw.jpg"
+      "name": "Matrix 3: Revolutions",
+      "rating": "6.7",
+      "imageURL": "https://www.themoviedb.org/t/p/w600_and_h900_bestv2/fgm8OZ7o4G1G1I9EeGcb85Noe6L.jpg",
+      "overview": "Gerçek dünya, Matrix'in makine askerleri tarafından istila edilirken, Zion'un da yaşanabilir bir yer haline getirilme çalışmaları paralel olarak devam ediyor. Neo'nun tüm insanlığı, gerçek yaşama geri döndürüp döndüremeyeceği ve Matrix sisteminin tam anlamıyla durdurulup durdurulmayacağı, gerçek dünya ile sanal dünya Matrix'in arasında sıkışıp kalan Neo'nun kendini kurtarabilmesine bağlıdır. Aksiyon ve bilimkurgu sinemasında önemli bir dönüm noktası olan Matrix serisinin son ayağı olan Matrix Revolutions, makineler ve insanoğlunun amansız savaşına sahne oluyor.",
+      "id": 9
     }
   ]
 }
