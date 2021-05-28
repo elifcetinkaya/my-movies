@@ -1,10 +1,9 @@
 import React from "react";
 import SearchBar from "./SearchBar";
 import MovieList from "./MovieList";
+import AddMovie from "./AddMovie";
 import axios from "axios";
-require("dotenv").config();
-
-console.log(process.env.REACT_APP_API_KEY);
+import { BrowserRouter as Router, Switch, Route, Link } from "react-router-dom";
 
 class App extends React.Component {
   state = {
@@ -14,11 +13,9 @@ class App extends React.Component {
   };
 
   async componentDidMount() {
-    const response = await axios.get(
-      `https://api.themoviedb.org/3/list/7096805?api_key=${process.env.REACT_APP_API_KEY}&language=en-US`
-    );
-    console.log(response.data.items);
-    this.setState({ movies: response.data.items });
+    const response = await axios.get("http://localhost:3002/movies");
+    //console.log(response);
+    this.setState({ movies: response.data });
   }
 
   // fetch api
@@ -40,14 +37,8 @@ class App extends React.Component {
 
   // axios api
   deleteMovie = async (movie) => {
-    axios.post(
-      `https://api.themoviedb.org/3/list/7096805/remove_item?media_id=${movie.id}&session_id=${process.env.REACT_APP_SESSION_ID}&api_key=${process.env.REACT_APP_API_KEY}`
-    );
+    axios.delete(`http://localhost:3002/movies/${movie.id}`);
     const newMovieList = this.state.movies.filter((m) => m.id !== movie.id);
-
-    // this.setState({
-    //   movies: newMovieList,
-    // });
 
     this.setState((state) => ({
       movies: newMovieList,
@@ -55,7 +46,6 @@ class App extends React.Component {
   };
 
   searchMovie = (event) => {
-    // console.log(event.target.value)
     this.setState({
       searchQuery: event.target.value,
     });
@@ -64,21 +54,38 @@ class App extends React.Component {
   render() {
     let filteredMovies = this.state.movies.filter((movie) => {
       return (
-        movie.title
+        movie.name
           .toLowerCase()
           .indexOf(this.state.searchQuery.toLowerCase()) !== -1
       );
     });
 
     return (
-      <div className="container">
-        <div className="row">
-          <div className="col-lg-12"></div>
-          <SearchBar searchMovieProp={this.searchMovie} />
-        </div>
+      <Router>
+        <div className="container">
+          <Switch>
+            <Route
+              path="/"
+              exact
+              render={() => (
+                <React.Fragment>
+                  <div className="row">
+                    <div className="col-lg-12"></div>
+                    <SearchBar searchMovieProp={this.searchMovie} />
+                  </div>
 
-        <MovieList movies={filteredMovies} deleteMovieProp={this.deleteMovie} />
-      </div>
+                  <MovieList
+                    movies={filteredMovies}
+                    deleteMovieProp={this.deleteMovie}
+                  />
+                </React.Fragment>
+              )}
+            ></Route>
+
+            <Route path="/add" component={AddMovie} />
+          </Switch>
+        </div>
+      </Router>
     );
   }
 }
