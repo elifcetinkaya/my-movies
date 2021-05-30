@@ -14,8 +14,11 @@ class App extends React.Component {
   };
 
   async componentDidMount() {
+    this.getMovies();
+  }
+
+  async getMovies() {
     const response = await axios.get("http://localhost:3002/movies");
-    //console.log(response);
     this.setState({ movies: response.data });
   }
 
@@ -46,7 +49,7 @@ class App extends React.Component {
     }));
   };
 
-  //search move
+  //search movie
   searchMovie = (event) => {
     this.setState({
       searchQuery: event.target.value,
@@ -59,6 +62,13 @@ class App extends React.Component {
     this.setState((state) => ({
       movies: state.movies.concat([movie]),
     }));
+    this.getMovies();
+  };
+
+  //edit movie
+  editMovie = async (id, updatedMovie) => {
+    await axios.put(`http://localhost:3002/movies/${id}`, updatedMovie);
+    this.getMovies();
   };
 
   render() {
@@ -104,11 +114,21 @@ class App extends React.Component {
                     this.addMovie(movie);
                     history.push("/");
                   }}
-                  />
+                />
               )}
             />
 
-            <Route path="/edit/:id" component={EditMovie} />
+            <Route
+              path="/edit/:id"
+              render={(props) => (
+                <EditMovie
+                  {...props}
+                  onEditMovie={(id, movie) => {
+                    this.editMovie(id, movie);
+                  }}
+                />
+              )}
+            />
           </Switch>
         </div>
       </Router>

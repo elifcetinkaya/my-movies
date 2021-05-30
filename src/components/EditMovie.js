@@ -21,9 +21,29 @@ class EditMovie extends React.Component {
     });
   }
 
-  // Edit butonuna basıldığında sayfanın refresh edilmesini önlemek için yazılan fonksiyon.
+  onInputChange = (e) => {
+    //console.log(e.target.name);
+    //console.log(e.target.value);
+    this.setState({
+      [e.target.name]: e.target.value
+    })
+  }
+
+
   handleFormSubmit = (e) => {
-    e.preventDefault();
+    e.preventDefault();  // Edit butonuna basıldığında sayfanın refresh edilmesini önlemek için yazılan fonksiyon.
+    
+    const {name, rating, overview, imageURL} = this.state;
+    const id = this.props.match.params.id;
+
+    const updatedMovie = {
+      name,
+      rating,
+      overview,
+      imageURL,
+    }
+    this.props.onEditMovie(id,updatedMovie);
+    this.props.history.push('/');
   };
 
   render() {
@@ -45,6 +65,7 @@ class EditMovie extends React.Component {
                 className="form-control"
                 name="name"
                 value={this.state.name}
+                onChange={this.onInputChange}
               />
             </div>
             <div className="form-group col-md-2">
@@ -54,6 +75,7 @@ class EditMovie extends React.Component {
                 className="form-control"
                 name="rating"
                 value={this.state.rating}
+                onChange={this.onInputChange}
               />
             </div>
           </div>
@@ -65,6 +87,7 @@ class EditMovie extends React.Component {
                 className="form-control"
                 name="imageURL"
                 value={this.state.imageURL}
+                onChange={this.onInputChange}
               />
             </div>
           </div>
@@ -76,13 +99,14 @@ class EditMovie extends React.Component {
                 name="overview"
                 rows="5"
                 value={this.state.overview}
+                onChange={this.onInputChange}
               ></textarea>
             </div>
           </div>
           <input
             type="submit"
             className="btn btn-danger btn-block"
-            value="Add Movie"
+            value="Edit Movie"
           />
         </form>
       </div>

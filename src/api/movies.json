@@ -22,11 +22,18 @@
       "id": 9
     },
     {
-      "name": "Cehennem Melekleri",
-      "rating": "6,3",
+      "name": "Cehennem Melekleri 4",
+      "rating": "7",
+      "overview": "TEST TEST TEST// Cehennem Melekleri geri dönüyor! Ama bu kez sorunları daha kişisel… Barney Ross (Sylvester Stallone), Lee Christmas (Jason Statham), Yin Yang (Jet Li), Gunnar Jensen (Dolph Lundgren),Toll Road (Randy Couture) ve Hale Caesar (Terry Crews), ekibe yeni katılan Billy the Kid (Liam Hemsworth) ve Maggie (Yu Nan) ile birlikte Mr. Church (Bruce Willis) basit gibi görünen bir iş için çağırdığında yeniden bir araya geliyor. Verilen görev Barney ve eski usul paralı askerlerden oluşan ekibi için kolay bir kazanç fırsatı gibi görünüyor. Ancak işler yolunda gitmiyor ve içlerinden biri öldürülüyor. Bunun üzerine Cehennem Melekleri düşman bölgesinde arkadaşlarının intikamını almaya karar veriyor. Zıt güçler aracılığıyla hasarın karşılığını veriyor ve tam zamanında beklenmedik bir tehdidi durduruyor. Ancak bütün bunlar kardeşlerini acımasız bir şekilde öldüren düşmanlarını adaletle tanıştırma istekleriyle karşılaştırılamıyor bile. Bunu da Cehennem Melekleri tarzında gerçekleştiriyorlar...",
       "imageURL": "https://www.themoviedb.org/t/p/w600_and_h900_bestv2/6ycqz6IFFb4v7iVS7R8hnVQxkwC.jpg",
-      "overview": "Cehennem Melekleri geri dönüyor! Ama bu kez sorunları daha kişisel… Barney Ross (Sylvester Stallone), Lee Christmas (Jason Statham), Yin Yang (Jet Li), Gunnar Jensen (Dolph Lundgren),Toll Road (Randy Couture) ve Hale Caesar (Terry Crews), ekibe yeni katılan Billy the Kid (Liam Hemsworth) ve Maggie (Yu Nan) ile birlikte Mr. Church (Bruce Willis) basit gibi görünen bir iş için çağırdığında yeniden bir araya geliyor. Verilen görev Barney ve eski usul paralı askerlerden oluşan ekibi için kolay bir kazanç fırsatı gibi görünüyor. Ancak işler yolunda gitmiyor ve içlerinden biri öldürülüyor. Bunun üzerine Cehennem Melekleri düşman bölgesinde arkadaşlarının intikamını almaya karar veriyor. Zıt güçler aracılığıyla hasarın karşılığını veriyor ve tam zamanında beklenmedik bir tehdidi durduruyor. Ancak bütün bunlar kardeşlerini acımasız bir şekilde öldüren düşmanlarını adaletle tanıştırma istekleriyle karşılaştırılamıyor bile. Bunu da Cehennem Melekleri tarzında gerçekleştiriyorlar...",
       "id": 10
+    },
+    {
+      "name": "Hollow Point",
+      "rating": "6.9",
+      "imageURL": "https://www.themoviedb.org/t/p/w600_and_h900_bestv2/lLbcqa8YnO2Qz4ggflhwglwXI8R.jpg",
+      "overview": "Nolan Cooray kendi halinde bir hayat sürmektedir ve aklı fikri sadece kızı ve karısındadır. Ancak Nolan'ın hayatı hiç beklemediği bir an da kızı ve karısının güpegündüz arabalarının içinde savunmasız bir şekilde öldürüldüğünü duyunca paramparça olur. Nolan için artık hayat bambaşka bir hal alır ve Nolan'ın hayatına devam etmesinin tek yolu da ona bu acıyı yaşatanlardan intikam almaktır. Fakat tüm bu olaylar arasında Nolan aslında bu katillerin sadece karısı ve kızını hedef almadığını ancak tüm şehre bela saçacak kadar ileri gidebilecek güçte adamlar olduğunu anlar!",
+      "id": 11
     }
   ]
 }
